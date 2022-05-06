@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<form id="form" action="" class="form">
+    <div class="container">
+        <div class="section">
+            <button class="btn" id="boton">Json</button>
+            <button class="btn" id="send">Send</button>
+            
+            <section>
+                <label for="name">Name</label>
+                <input id="name" for="name" class="number" type="text" maxlength="19" event.charCode required placeholder="Julija"/>
+            </section>
+
+            <label>Age</label>
+            <input class="number" type="text" ng-model="ncard" maxlength="19"
+                onkeypress='return event.charCode >= 48 && event.charCode <= 57' required placeholder="25" />
+            <div class="col2">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                    </thead>
+                    <tbody id="res">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+    <a href=""></a>
+</body>
+
+
+
+<!-- Scripts -->
+
+<script src="ajax.js"></script>
+<script>
+//    const $form = document.querySelector('#form')
+
+//    $form.addEventListener('submit', handleSubmit)
+   
+//    function handleSubmit(event){
+// event.preventDefault()
+// const form = new FormData(this)
+// console.log(form.get('name'));
+// }
+
+</script>
+</html>
